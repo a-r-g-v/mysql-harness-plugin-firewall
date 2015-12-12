@@ -15,3 +15,20 @@ MySQL Driver ---> MySQL Router[mysql-harness-plugin-firewall] --> MySQL
 - Nginx Naxsiのような学習によるホワイトリストベースのSQL Injection検知
 - ワードベースのSQL Injection検知(disable_functionのようなもの)
 
+## Install
+
+### download
+
+```
+git clone https://github.com/mysql/mysql-router.git
+cd mysql-router/mysql_harness/plugins
+git clone https://github.com/greyia/mysql-harness-plugin-firewall.git firewall
+```
+
+### build
+
+```
+cmake ..
+make
+make install
+```
